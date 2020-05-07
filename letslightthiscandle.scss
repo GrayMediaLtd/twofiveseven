@@ -166,17 +166,17 @@ transform: rotate(180deg);
 
 
 // ? TOP LEVEL CONTAINER ELEMENT
-.sc-emmjRN.frSrNq {
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
-    // grid-template-columns: 1fr 1fr;
-}
+// .sc-emmjRN.frSrNq {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     grid-template-columns: 1fr 1fr;
+// }
 
-.sc-eerKOB.ezAuEW {
-    // grid-column: 1 / -1;
+// .sc-eerKOB.ezAuEW {
+//     grid-column: 1 / -1;
 
-}
+// }
 
 .cc {
     font-family: var(--font-rubik);
@@ -229,6 +229,11 @@ transform: rotate(180deg);
 @keyframes blink {
     0% { visibility: hidden;}
     100% { visibility: show;}
+}
+
+
+.cc__submission-button {
+    background: hotpink !important;
 }
 
 // ? V1.0 Styling

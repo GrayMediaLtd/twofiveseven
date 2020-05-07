@@ -272,4 +272,8 @@ main {
     visibility: show;
   }
 }
+
+.cc__submission-button {
+  background: hotpink !important;
+}
 /*# sourceMappingURL=letslightthiscandle.css.map */
