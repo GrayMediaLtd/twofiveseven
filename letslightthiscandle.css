@@ -5,6 +5,7 @@
   --color-orange: #fd9962;
   --color-peach: #fd807a;
   --font-rubik: 'Rubik', arial, helvetica, sans-serif;
+  --box-shadow: 3px 3px 0 var(--color-black);
 }
 
 *, *::before, *::after {
@@ -19,6 +20,10 @@ body {
   min-height: 100vh;
   font-family: Inter, arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
 }
 
 a {
@@ -93,7 +98,7 @@ h3 {
   pointer-events: none;
 }
 
-main {
+.home {
   min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,7 +278,39 @@ main {
   }
 }
 
-.cc__submission-button {
-  background: hotpink !important;
+.partners {
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.partners__inner {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.partners__single {
+  background: whitesmoke;
+  height: 100%;
+  padding: 1rem 1.4rem 1.6rem;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.partners__logo {
+  mix-blend-mode: multiply;
+  width: 100%;
+  max-width: 300px;
+}
+
+.partners__title {
+  margin: 0.4rem 0;
+}
+
+.partners__text {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=letslightthiscandle.css.map */
