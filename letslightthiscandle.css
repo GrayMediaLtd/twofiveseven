@@ -300,10 +300,21 @@ h3 {
           box-shadow: var(--box-shadow);
 }
 
-.partners__logo {
-  mix-blend-mode: multiply;
+.partners__logo-holder {
   width: 100%;
   max-width: 300px;
+  max-height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partners__logo {
+  mix-blend-mode: multiply;
 }
 
 .partners__title {
@@ -312,5 +323,16 @@ h3 {
 
 .partners__text {
   font-size: 0.7rem;
+}
+
+.spacelamp {
+  height: 140px;
+  width: 120px;
+}
+
+@media (max-width: 660px) {
+  .container {
+    max-width: 420px;
+  }
 }
 /*# sourceMappingURL=letslightthiscandle.css.map */

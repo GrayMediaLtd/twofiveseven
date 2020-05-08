@@ -247,10 +247,17 @@ transform: rotate(180deg);
         box-shadow: var(--box-shadow);
     }
 
-    &__logo {
-        mix-blend-mode: multiply;
+    &__logo-holder {
         width: 100%;
         max-width: 300px;
+        max-height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        mix-blend-mode: multiply;
         // min-height: 60%;
     }
 
@@ -261,5 +268,15 @@ transform: rotate(180deg);
     &__text {
         font-size: 0.7rem;
         
+    }
+}
+.spacelamp {
+    height: 140px;
+    width: 120px;
+}
+
+@media (max-width: 660px) {
+    .container {
+        max-width: 420px;
     }
 }
