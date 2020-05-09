@@ -104,16 +104,18 @@ h3 {
 }
 
 .home {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    // min-height: 100vh;
+    // display: flex;
+    // align-items: center;
+    padding: 4rem 0;
 
 
     p {
     font-family: var(--font-rubik);
-    text-align: center;
-    font-size: 2rem;
-}
+    // text-align: center;
+    font-size: 1.6rem;
+    }
+
 }
 
 
