@@ -320,6 +320,21 @@ section {
     background: var(--color-orange);
 }
 
+.full-office {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("img/257-space.jpg");
+    background-position: center;
+
+    &__inner {
+        background: rgba(255,255,255,0.9);
+        border-radius: 0.4rem;
+        padding: 2rem 3rem 4rem;
+    }
+
+}
+
 .furniture {
     background: var(--color-peach);
 }
