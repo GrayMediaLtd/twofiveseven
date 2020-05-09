@@ -47,15 +47,26 @@ a {
   color: var(--color-black);
 }
 
+section a {
+  border-bottom: 2px solid black;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+section a:hover, section a:focus {
+  border-bottom: 2px dotted black;
+}
+
 h3 {
   font-family: var(--font-rubik);
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 890px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -115,6 +126,7 @@ h3 {
 }
 
 .home {
+  min-height: 100vh;
   padding: 4rem 0;
 }
 
@@ -124,6 +136,9 @@ h3 {
 }
 
 .modal-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
   cursor: pointer;
   background: white;
   padding: 0.6em 1em;
@@ -148,7 +163,6 @@ h3 {
   opacity: 0;
   width: 100%;
   min-height: 100vh;
-  height: 100%;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
@@ -343,8 +357,8 @@ h3 {
 }
 
 .text--large {
-  font-size: 2rem;
-  line-height: 1.4;
+  font-size: 2.1rem;
+  line-height: 1.35;
 }
 
 .two-columns {
@@ -387,13 +401,66 @@ section {
 }
 
 @media (max-width: 660px) {
+  html {
+    font-size: 13px;
+  }
   .container {
     max-width: 420px;
+    padding: 0;
+  }
+  .header {
+    padding: 1.6rem 0 0 0;
+  }
+  .home {
+    padding: 2rem 0;
+  }
+  .header__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: mistyrose;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .header__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h3 {
+    font-size: 0.78rem;
+  }
+  section {
+    padding: 2rem 1rem;
+  }
+  .home__text, .partners {
+    padding: 1rem;
   }
   .two-columns {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 0;
+  }
+  .text--large {
+    font-size: 1.42rem;
+  }
+  .full-office__inner {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=letslightthiscandle.css.map */
