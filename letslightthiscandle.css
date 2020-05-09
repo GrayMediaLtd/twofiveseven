@@ -356,6 +356,11 @@ h3 {
   width: 120px;
 }
 
+.space__img {
+  background-color: #FEFEFE;
+  padding-top: 2rem;
+}
+
 .text--large {
   font-size: 2.1rem;
   line-height: 1.35;
