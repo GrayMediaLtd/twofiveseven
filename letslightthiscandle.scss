@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
-@import  "fontface.scss";
+// @import  "fontface.scss";
 
 
 :root {
@@ -39,6 +39,7 @@ html {
 }
 
 body {
+    // overflow: hidden;
     background: linear-gradient(90deg, var(--color-orange), var(--color-peach));
     width: 100%;
     min-height: 100vh;
@@ -151,7 +152,7 @@ h3 {
     font-weight: 700;
     border: none;
     outline: none;
-    box-shadow: 3px 3px 0 var(--color-black);
+    box-shadow: 3px 3px 0 var(--color-black), -3px -3px 0 var(--color-peach);
     transition: box-shadow 300ms;
     &:hover {
         box-shadow: 5px 5px 0 var(--color-black);
@@ -164,7 +165,7 @@ h3 {
     opacity: 0;
     width: 100%;
     min-height: 100vh;
-    // height: 700%;
+    height: 900%;
     background: rgba(0,0,0,0.7);
     position: absolute;
     top: 0;
@@ -178,6 +179,11 @@ h3 {
 .modal-active {
     visibility: visible;
     opacity: 1;
+    // overflow: scroll;
+}
+
+.body-active {
+    overflow: hidden;
 }
 
 .modal-close {
@@ -261,7 +267,7 @@ transform: rotate(180deg);
     }
 }
 .cursor {
-    animation: blink 800ms steps(2) infinite;
+    animation: blink 1000ms steps(2) infinite;
 }
 
 @keyframes blink {
@@ -276,13 +282,12 @@ transform: rotate(180deg);
 
 .partners {
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 0 6rem;
     
     &__inner {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        ;
     }
     
     &__single {
@@ -322,17 +327,7 @@ transform: rotate(180deg);
     width: 120px;
 }
 
-.space {
-    min-height: 100vh;
-    padding: 5rem 0 8rem;
-    background-color: #fff;
-    background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
-    background-position: 100% 80%;
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 60vmax auto;
-
+.section {
     &__title-box {
         display: flex;
     }
@@ -354,18 +349,31 @@ transform: rotate(180deg);
 
         }
     }
+}
+
+.space {
+    min-height: 100vh;
+    padding: 5rem 0 8rem;
+    background-color: #fff;
+    background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
+    background-position: 100% 80%;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 55vmax auto;
     
     &__text-intro {
         // color: var(--color-orange);
         text-shadow: 5px 5px 20px whitesmoke;
         font-weight: 700;
         font-size: 2.6rem;
-        max-width: 48%;
+        max-width: 44%;
         line-height: 1.25;
-        margin-left: -2.3rem;
+        margin-left: -2.4rem;
     }
     &__info-top {
-        margin-bottom: 12rem;
+        margin: 6rem 0 8rem 0;
+        // margin-bottom: 12rem;
     }
     
     &__text-intro-list {
@@ -373,11 +381,10 @@ transform: rotate(180deg);
     }
     
     &__text-list {
-        text-shadow: 5px 5px 10px whitesmoke;
         font-weight: 600;
-        font-size: 2.1rem;
-        line-height: 1.4;
-        margin-left: -2.3rem;
+        font-size: 1.8rem;
+        line-height: 1.42;
+        margin-left: -2.4rem;
     }
 }
 
@@ -386,7 +393,13 @@ transform: rotate(180deg);
 }
 .text--large {
     font-size: 2rem;
-    line-height: 1.35;
+    font-weight: 600;
+    line-height: 1.42;
+    margin: 5rem 0;
+    
+}
+.text--shadow {
+    text-shadow: 0 2px 10px whitesmoke;
 }
 
 .two-columns {
@@ -405,24 +418,33 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    // background-image: url("img/257-space.jpg");
-    // background-position: center;
 
-    &__inner {
-        // background: rgba(255,255,255,0.9);
-        background: #f4f4f4;
-        border-radius: 0.4rem;
-        padding: 2rem 3rem 4rem;
+    &__img {
+        margin: 2rem 0 1rem 0;
     }
 
 }
 
 .furniture {
-    background: var(--color-peach);
+    min-height: 100vh;
+    padding: 5rem 0 8rem;
+    background-color: #fff;
+    background-image: url("img/twofiveseven-coworking-furniture.jpg");
+    background-position: 100% 80%;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 55vmax auto;
+}
+
+.footer {
+    text-align: center;
+    display: block;
+    padding-bottom: 2rem;
 }
 
 // ? MEDIA QUERIES 
-@media (max-width: 660px) {
+@media (max-width: 900px) {
 
     html {
         font-size: 13px;
@@ -430,7 +452,7 @@ section {
 
     .container {
         max-width: 420px;
-        padding: 0;
+        padding: 0 1rem;
     }
 
     .header { 
@@ -439,6 +461,7 @@ section {
 
     .home {
         padding: 2rem 0;
+        min-height: auto;
     }
 
     .header__nav {
@@ -451,12 +474,14 @@ section {
         transform: translateX(-100%);
     }
 
-    // .modal-button {
-    //     position: fixed;
-    //     bottom: 0;
-    //     right: 0;
-    //     transform: translateX(100%);
-    // }
+    .modal-button {
+        position: fixed;
+        top: unset;
+        bottom: 10px;
+        right: 10px;
+        z-index: 777;
+        // transform: translateX(100%);
+    }
 
     .header__inner {
         flex-direction: column;
@@ -476,9 +501,11 @@ section {
         padding: 2rem 1rem; 
     }
 
-    .home__text, .partners {
-        padding: 1rem;
+    .single-column {
+        max-width: 420px;
+        width: 100%;
     }
+
     .two-columns {
         grid-template-columns: 1fr;
         gap: 0;
@@ -486,9 +513,63 @@ section {
 
     .text--large {
         font-size: 1.42rem;
+        margin: 3rem 0;
     }
 
     .full-office__inner {
         padding: 1rem;
+    }
+    .space, .furniture {
+        padding-top: 2rem;
+    }
+
+    .private-office, .story {
+        padding-bottom: 6rem;
+    }
+
+    .space {
+        background-position: 50% 270px;
+        background-size: contain;
+        background-attachment: unset;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        &__info-top {
+            margin-top: 3rem;
+        }
+        &__text-intro {
+            font-size: 1.8rem;
+            max-width: 420px;
+            width: 100%;
+            margin: 1rem 0 25rem;
+
+        }
+
+        &__text-intro-list {
+            width: 100%;
+            max-width: 420px;
+        }
+
+        &__text-list {
+            margin: 3rem 0;
+        }
+    }
+
+    .furniture {
+        padding-bottom: 20rem;
+        background-position: 50% 100%;
+        background-size: contain;
+        background-attachment: unset;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .section__title {
+        flex-direction: row-reverse;
+        margin-right: 1rem;
+
+        &:after {
+            margin: 0 1rem 0 -10rem;
+        }
     }
 }

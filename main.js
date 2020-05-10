@@ -1,3 +1,5 @@
+const body = document.querySelector('body')
+
 const modalBtn = document.querySelector('.modal-btn-js')
 const modalClose = document.querySelector('.modal-close-js')
 const modal = document.querySelector('.modal')
@@ -38,9 +40,11 @@ function removeCalculator() {
 }
 
 function openModal() {
+    window.scrollTo(0, 0)
     createCalcEmbedder()
     const calculator = document.querySelector('.calculator')
     
+    // body.classList.add('body-active')
     modal.classList.add('modal-active')
     calculator.classList.add('calculator-active')
     modalClose.classList.add('modal-close-active')
@@ -52,6 +56,7 @@ function openModal() {
 function closeModal() {
     const calculator = document.querySelector('.calculator')
     modal.classList.remove('modal-active')
+    // body.classList.remove('body-active')
     calculator.classList.remove('calculator-active')
     modalClose.classList.remove('modal-close-active')
 
