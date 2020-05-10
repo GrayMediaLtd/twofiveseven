@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 
 @import  "fontface.scss";
@@ -32,17 +32,17 @@ Body::-webkit-scrollbar-thumb {
 
 html {
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
-    @supports (font-variation-settings: normal) {
-      html { font-family: 'Inter var', sans-serif; }
-    }
+    // font-family: 'Inter', sans-serif;
+    // @supports (font-variation-settings: normal) {
+    //   html { font-family: 'Inter var', sans-serif; }
+    // }
 }
 
 body {
     background: linear-gradient(90deg, var(--color-orange), var(--color-peach));
     width: 100%;
     min-height: 100vh;
-    // font-family: Inter, arial, Arial, Helvetica, sans-serif;
+    font-family: Inter, arial, Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
@@ -323,13 +323,69 @@ transform: rotate(180deg);
 }
 
 .space {
-    &__img {
-        background-color: #FEFEFE;
-        padding-top: 2rem;
+    min-height: 100vh;
+    padding: 5rem 0 8rem;
+    background-color: #fff;
+    background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
+    background-position: 100% 80%;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 60vmax auto;
+
+    &__title-box {
+        display: flex;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        white-space: nowrap;
+        
+        &:after {
+            margin-left: 1rem;
+            content: '';
+            display: block;
+            background: var(--color-black);
+            height: 2px;
+            width: 100%;
+            flex-grow: 1;
+
+        }
+    }
+    
+    &__text-intro {
+        // color: var(--color-orange);
+        text-shadow: 5px 5px 20px whitesmoke;
+        font-weight: 700;
+        font-size: 2.6rem;
+        max-width: 48%;
+        line-height: 1.25;
+        margin-left: -2.3rem;
+    }
+    &__info-top {
+        margin-bottom: 12rem;
+    }
+    
+    &__text-intro-list {
+        max-width: 30%;
+    }
+    
+    &__text-list {
+        text-shadow: 5px 5px 10px whitesmoke;
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 1.4;
+        margin-left: -2.3rem;
     }
 }
+
+.single-column {
+    max-width: 45%;
+}
 .text--large {
-    font-size: 2.1rem;
+    font-size: 2rem;
     line-height: 1.35;
 }
 
@@ -345,19 +401,16 @@ section {
     // margin: 3rem 0 6rem;
 }
 
-.space {
-    background: var(--color-orange);
-}
-
-.full-office {
+.private-office {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url("img/257-space.jpg");
-    background-position: center;
+    // background-image: url("img/257-space.jpg");
+    // background-position: center;
 
     &__inner {
-        background: rgba(255,255,255,0.9);
+        // background: rgba(255,255,255,0.9);
+        background: #f4f4f4;
         border-radius: 0.4rem;
         padding: 2rem 3rem 4rem;
     }

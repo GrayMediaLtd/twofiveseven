@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 /* -------------------------------------------------------
 Variable font.
@@ -88,13 +89,6 @@ Body::-webkit-scrollbar-thumb {
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  html html {
-    font-family: 'Inter var', sans-serif;
-  }
 }
 
 body {
@@ -102,6 +96,7 @@ body {
   background: linear-gradient(90deg, var(--color-orange), var(--color-peach));
   width: 100%;
   min-height: 100vh;
+  font-family: Inter, arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
@@ -423,13 +418,81 @@ h3 {
   width: 120px;
 }
 
-.space__img {
-  background-color: #FEFEFE;
-  padding-top: 2rem;
+.space {
+  min-height: 100vh;
+  padding: 5rem 0 8rem;
+  background-color: #fff;
+  background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
+  background-position: 100% 80%;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 60vmax auto;
+}
+
+.space__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.space__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.space__title:after {
+  margin-left: 1rem;
+  content: '';
+  display: block;
+  background: var(--color-black);
+  height: 2px;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.space__text-intro {
+  text-shadow: 5px 5px 20px whitesmoke;
+  font-weight: 700;
+  font-size: 2.6rem;
+  max-width: 48%;
+  line-height: 1.25;
+  margin-left: -2.3rem;
+}
+
+.space__info-top {
+  margin-bottom: 12rem;
+}
+
+.space__text-intro-list {
+  max-width: 30%;
+}
+
+.space__text-list {
+  text-shadow: 5px 5px 10px whitesmoke;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 1.4;
+  margin-left: -2.3rem;
+}
+
+.single-column {
+  max-width: 45%;
 }
 
 .text--large {
-  font-size: 2.1rem;
+  font-size: 2rem;
   line-height: 1.35;
 }
 
@@ -446,11 +509,7 @@ section {
   padding: 4rem 2rem 6rem;
 }
 
-.space {
-  background: var(--color-orange);
-}
-
-.full-office {
+.private-office {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,12 +517,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("img/257-space.jpg");
-  background-position: center;
 }
 
-.full-office__inner {
-  background: rgba(255, 255, 255, 0.9);
+.private-office__inner {
+  background: #f4f4f4;
   border-radius: 0.4rem;
   padding: 2rem 3rem 4rem;
 }
