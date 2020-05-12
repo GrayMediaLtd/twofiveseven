@@ -129,8 +129,11 @@ h3 {
 
     p {
     font-family: var(--font-rubik);
-    // text-align: center;
     font-size: 1.6rem;
+    }
+
+    &__text--centered {
+        text-align: center;
     }
 
 }
@@ -277,7 +280,7 @@ transform: rotate(180deg);
 
 .partners {
     margin: 0 auto;
-    padding: 2rem 0 6rem;
+    padding: 1rem 0 6rem;
     
     &__inner {
         display: grid;
@@ -348,7 +351,7 @@ transform: rotate(180deg);
 
 .space {
     min-height: 100vh;
-    padding: 5rem 0 8rem;
+    padding: 1rem 0 8rem;
     background-color: #fff;
     background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
     background-position: 100% 80%;
@@ -405,7 +408,7 @@ transform: rotate(180deg);
 
 section {
     min-height: 80vh;
-    padding: 4rem 2rem 6rem;
+    padding: 1rem 2rem 6rem;
     // margin: 3rem 0 6rem;
 }
 
@@ -422,7 +425,7 @@ section {
 
 .furniture {
     min-height: 100vh;
-    padding: 5rem 0 8rem;
+    padding: 1rem 0 8rem;
     background-color: #fff;
     background-image: url("img/twofiveseven-coworking-furniture.jpg");
     background-position: 100% 80%;
@@ -430,6 +433,41 @@ section {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 55vmax auto;
+}
+
+.contact {
+    &__form {
+        max-width: 420px;
+        margin: 0 auto;
+
+        label {
+            display: block;
+            margin-bottom: 0.6rem;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            background: var(--color-black);
+            color: whitesmoke;
+            border: none;
+            padding: 0.8rem 0.8rem;
+        }
+        
+        textarea {
+            min-height: 240px;
+            resize: vertical;
+        }
+        
+        [type="submit"] {
+            background: var(--color-black);
+            color: whitesmoke;
+            border: none;
+            padding: 0.6rem 1rem;
+            margin-top: 0.4rem;
+        }
+    }
 }
 
 .footer {

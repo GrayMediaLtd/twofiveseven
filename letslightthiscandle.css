@@ -135,6 +135,10 @@ h3 {
   font-size: 1.6rem;
 }
 
+.home__text--centered {
+  text-align: center;
+}
+
 .modal-button {
   position: fixed;
   top: 1rem;
@@ -310,7 +314,7 @@ h3 {
 
 .partners {
   margin: 0 auto;
-  padding: 2rem 0 6rem;
+  padding: 1rem 0 6rem;
 }
 
 .partners__inner {
@@ -396,7 +400,7 @@ h3 {
 
 .space {
   min-height: 100vh;
-  padding: 5rem 0 8rem;
+  padding: 1rem 0 8rem;
   background-color: #fff;
   background-image: url(img/twofiveseven-our-cowork-space-whiteout.jpg);
   background-position: 100% 80%;
@@ -455,7 +459,7 @@ h3 {
 
 section {
   min-height: 80vh;
-  padding: 4rem 2rem 6rem;
+  padding: 1rem 2rem 6rem;
 }
 
 .private-office {
@@ -474,7 +478,7 @@ section {
 
 .furniture {
   min-height: 100vh;
-  padding: 5rem 0 8rem;
+  padding: 1rem 0 8rem;
   background-color: #fff;
   background-image: url("img/twofiveseven-coworking-furniture.jpg");
   background-position: 100% 80%;
@@ -482,6 +486,39 @@ section {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 55vmax auto;
+}
+
+.contact__form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.contact__form input, .contact__form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: var(--color-black);
+  color: whitesmoke;
+  border: none;
+  padding: 0.8rem 0.8rem;
+}
+
+.contact__form textarea {
+  min-height: 240px;
+  resize: vertical;
+}
+
+.contact__form [type="submit"] {
+  background: var(--color-black);
+  color: whitesmoke;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 0.4rem;
 }
 
 .footer {
