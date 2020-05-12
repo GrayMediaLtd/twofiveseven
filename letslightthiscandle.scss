@@ -124,14 +124,8 @@ h3 {
 }
 
 .home {
-    // background: url("img/257-topology.jpg");
-    // background-position: center;
-    // background-size: ;
-    min-height: 100vh;
-    // display: flex;
-    // align-items: center;
+    min-height: 80vh;
     padding: 4rem 0;
-
 
     p {
     font-family: var(--font-rubik);
@@ -210,11 +204,11 @@ transform: rotate(180deg);
     background: white;
     padding: 3rem;
     width: 100%;
-    max-width: 960px;
+    max-width: 940px;
     transition: transform 300ms ease-out;
 
     @media(max-width: 600px) {
-        padding: 0.6rem;       
+        padding: 1.6rem;       
     }
 }
 
@@ -224,7 +218,7 @@ transform: rotate(180deg);
 
 .cc {
     font-family: var(--font-rubik);
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     h2 {
         color: var(--color-orange);
@@ -251,9 +245,10 @@ transform: rotate(180deg);
         max-width: 100% !important;
         padding: 1rem !important;
         border: 1px solid var(--color-black);
-
+        
         @media(max-width: 600px) {
             padding: 0.4rem !important;
+            border: none;
         }
     }
 

@@ -126,7 +126,7 @@ h3 {
 }
 
 .home {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 4rem 0;
 }
 
@@ -213,7 +213,7 @@ h3 {
   background: white;
   padding: 3rem;
   width: 100%;
-  max-width: 960px;
+  max-width: 940px;
   -webkit-transition: -webkit-transform 300ms ease-out;
   transition: -webkit-transform 300ms ease-out;
   transition: transform 300ms ease-out;
@@ -222,7 +222,7 @@ h3 {
 
 @media (max-width: 600px) {
   .calculator {
-    padding: 0.6rem;
+    padding: 1.6rem;
   }
 }
 
@@ -233,7 +233,7 @@ h3 {
 
 .cc {
   font-family: var(--font-rubik);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .cc h2 {
@@ -268,6 +268,7 @@ h3 {
 @media (max-width: 600px) {
   .cc__box.sc-jlyJG.descwZ, .cc .CVpsf {
     padding: 0.4rem !important;
+    border: none;
   }
 }
 
