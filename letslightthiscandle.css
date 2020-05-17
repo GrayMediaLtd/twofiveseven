@@ -50,13 +50,15 @@ a {
 }
 
 section a {
-  border-bottom: 2px solid black;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  -webkit-transition: border 600ms;
+  transition: border 600ms;
 }
 
 section a:hover, section a:focus {
-  border-bottom: 2px dotted black;
+  border-bottom: 2px solid black;
 }
 
 h3 {
@@ -64,13 +66,42 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .container {
   max-width: 890px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.text-list {
+  font-size: 1rem;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.text-list li {
+  margin-bottom: 0.6rem;
+}
+
+.text-list li::before {
+  content: '';
+  display: inline-block;
+  background: black;
+  height: 2px;
+  width: 2rem;
+  margin-bottom: 0.25em;
+  margin-right: 0.4rem;
+}
+
+.text-list--large {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-left: -2.4rem;
+  margin-bottom: 8rem;
 }
 
 .header {
@@ -146,7 +177,7 @@ h3 {
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-  background: white;
+  background: whitesmoke;
   padding: 0.6em 1em;
   font-weight: 700;
   border: none;
@@ -172,6 +203,7 @@ h3 {
   height: 900%;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
+  z-index: 666;
   top: 0;
   left: 0;
   right: 0;
@@ -359,12 +391,13 @@ h3 {
 }
 
 .partners__title {
-  margin: 0.4rem 0;
+  margin: 0.8rem 0 0;
   line-height: 1.2;
 }
 
 .partners__text {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .partners__link {
@@ -372,11 +405,13 @@ h3 {
   transition: -webkit-transform 400ms ease-out;
   transition: transform 400ms ease-out;
   transition: transform 400ms ease-out, -webkit-transform 400ms ease-out;
+  border: none;
 }
 
 .partners__link:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+  border: none;
 }
 
 .spacelamp {
@@ -445,13 +480,6 @@ h3 {
   max-width: 30%;
 }
 
-.space__text-list {
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 1.42;
-  margin-left: -2.4rem;
-}
-
 .single-column {
   max-width: 45%;
 }
@@ -460,7 +488,7 @@ h3 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.42;
-  margin: 5rem 0;
+  margin: 4.2rem 0;
 }
 
 .text--shadow {
@@ -576,7 +604,7 @@ section {
     top: unset;
     bottom: 10px;
     right: 10px;
-    z-index: 777;
+    z-index: 555;
   }
   .header__inner {
     -webkit-box-orient: vertical;

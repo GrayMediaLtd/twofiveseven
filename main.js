@@ -71,6 +71,7 @@ function closeModal() {
 //     }, 5000).then(submitButton.addEventListener('click', console.log('CLICKED')))
 // }
 
+
 modalBtn.addEventListener('click', openModal)
 modalClose.addEventListener('click', closeModal)
 
