@@ -508,11 +508,6 @@ section {
   padding: 1rem 2rem 6rem;
 }
 
-#co-working,
-#office-cost-calculator{
-  background: white;
-}
-
 .private-office {
   min-height: 100vh;
   display: -webkit-box;
