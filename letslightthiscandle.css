@@ -36,7 +36,7 @@ body {
   background: linear-gradient(90deg, var(--color-orange), var(--color-peach));
   width: 100%;
   min-height: 100vh;
-  font-family: Inter, arial, Arial, Helvetica, sans-serif;
+  font-family: var(--font-rubik);
   line-height: 1.5;
 }
 
