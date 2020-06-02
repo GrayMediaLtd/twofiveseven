@@ -733,4 +733,8 @@ section {
 .calc-btn {
   max-width:200px;
 }
+
+.calculator__intro h2{
+ margin-bottom: 0;
+}
 /*# sourceMappingURL=letslightthiscandle.css.map */
