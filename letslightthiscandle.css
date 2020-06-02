@@ -729,4 +729,8 @@ section {
    -o-animation: flickerAnimation 3s infinite;
     animation: flickerAnimation 3s infinite;
 }
+
+.calc-btn {
+  max-width:200px;
+}
 /*# sourceMappingURL=letslightthiscandle.css.map */
