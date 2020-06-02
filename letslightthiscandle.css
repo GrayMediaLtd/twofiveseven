@@ -508,6 +508,10 @@ section {
   padding: 1rem 2rem 6rem;
 }
 
+#office-for-a-day {
+  background: white;
+}
+
 .private-office {
   min-height: 100vh;
   display: -webkit-box;
