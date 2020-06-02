@@ -466,10 +466,9 @@ h3 {
 .space__text-intro {
   text-shadow: 5px 5px 20px whitesmoke;
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: 2.0rem;
   max-width: none;
   line-height: 1.25;
-  margin-left: -2.4rem;
 }
 
 .space__info-top {
