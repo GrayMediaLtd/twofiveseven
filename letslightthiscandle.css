@@ -129,6 +129,7 @@ h3 {
   display: flex;
   align-items: center;
   font-family: var( --font-plex);
+  font-size: 12px;
 }
 
 .header__logo img {
