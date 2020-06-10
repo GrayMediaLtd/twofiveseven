@@ -123,7 +123,13 @@ h3 {
 
 .header__logo {
   width: 100%;
-  max-width: 230px;
+ max-width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  max-width:230px;
 }
 
 .header__nav-list {
