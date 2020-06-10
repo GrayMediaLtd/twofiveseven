@@ -8,6 +8,7 @@
   --font-rubik: 'Rubik', arial, helvetica, sans-serif;
   --font-plex : 'IBM Plex Mono', monospace;
   --box-shadow: 3px 3px 0 var(--color-black);
+  --background-color: var(--color-peach);
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +37,7 @@ html {
 body {
   /*background: -webkit-gradient(linear, left top, right top, from(var(--color-orange)), to(var(--color-peach)));*/
   /*background: linear-gradient(90deg, var(--color-orange), var(--color-peach));*/
-  background: var(--color-peach);
+  background: var(--background-color);
   width: 100%;
   min-height: 100vh;
   font-family: var(--font-rubik);
@@ -109,6 +110,9 @@ h3 {
 
 .header {
   padding: 2rem 0;
+      position: sticky;
+    top: 0;
+    background: var(--background-color);
 }
 
 .header__inner {
@@ -137,7 +141,7 @@ h3 {
 }
 
 .workspace {
-  padding-top:15px;
+  padding-top:10px;
 }
 
 .header__nav-list {
