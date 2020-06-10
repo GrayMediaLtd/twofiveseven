@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 :root {
   --color-black: #1c1c1c;
   --color-orange: #fd9962;
   --color-peach: #FF7766;
   --font-rubik: 'Rubik', arial, helvetica, sans-serif;
+  --font-plex : 'IBM Plex Mono', monospace;
   --box-shadow: 3px 3px 0 var(--color-black);
 }
 
@@ -126,6 +128,7 @@ h3 {
  max-width: 450px;
   display: flex;
   align-items: center;
+  font-family: var( --font-plex);
 }
 
 .header__logo img {
