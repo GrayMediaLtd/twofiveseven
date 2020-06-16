@@ -17,7 +17,7 @@
 
                 <div class="header__logo">
                     <a href="index.html">
-                        <img alt="logo" src="/img/twofiveseven-web-FF7766.gif" />
+                        <img id="logo" alt="logo" src="/img/twofiveseven-web-FF7766.gif" />
                     </a>
                     <span class="workspace">workspace for a new world</span>
                 </div>
@@ -363,7 +363,9 @@
             let root = document.documentElement;
             var arr = ["#55BBCC", "GeeksForGeeks", "#77EE99", "#ED77EE", "#FF7766"]; 
             console.log(arr[Math.floor(Math.random() * arr.length)]);
-             root.style.setProperty('--background-color', arr[Math.floor(Math.random() * arr.length)]);    
+            var background_color = arr[Math.floor(Math.random() * arr.length)];
+             root.style.setProperty('--background-color', background_color);  
+            document.getElementById('logo').src='/img/twofiveseven-web-'+background_color+'.gif';
         </script>
     <!-- <script type="text/javascript" src="calc.js" id="convertcalculator-embedder-3s9JGG6kzNj78yt9u"
         class="convertcalculator-async-script-loader"></script> -->
