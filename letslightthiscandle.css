@@ -266,9 +266,7 @@ h3 {
 }
 
 .calculator {
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
-  margin: 3rem auto;
+  margin: 2rem auto;
   background: white;
   padding: 3rem;
   width: 100%;
@@ -718,38 +716,6 @@ section {
   }
 }
 
-@keyframes flickerAnimation {
-  0%   { opacity:1; }
-  30%  { opacity:0; }
-  60%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes flickerAnimation{
- 0%   { opacity:1; }
-  30%  { opacity:0; }
-  60%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes flickerAnimation{
- 0%   { opacity:1; }
-  30%  { opacity:0; }
-  60%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes flickerAnimation{
- 0%   { opacity:1; }
-  30%  { opacity:0; }
-  60%  { opacity:0; }
-  100% { opacity:1; }
-}
-
-#logo {
-   -webkit-animation: flickerAnimation 3s infinite;
-   -moz-animation: flickerAnimation 3s infinite;
-   -o-animation: flickerAnimation 3s infinite;
-    animation: flickerAnimation 3s infinite;
-}
-
 .calc-btn {
   max-width:200px;
 }
@@ -760,6 +726,16 @@ section {
 }
 
 .calc-header {
-  max-height:40px;
+  height:40px;
+}
+
+.header-container {
+display: flex;
+}
+span.header-filler {
+    background: white;
+    display: flex;
+    width: auto;
+    flex-grow: 1;
 }
 /*# sourceMappingURL=letslightthiscandle.css.map */
