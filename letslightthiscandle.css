@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 :root {
   --color-black: #1c1c1c;
@@ -479,7 +479,7 @@ h3 {
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 55vmax auto;
+  background-size: 60vmax auto;
 }
 
 .space__text-intro {
@@ -550,7 +550,7 @@ section {
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 66vmax auto;
+  background-size: 75vmax auto;
 }
 
 .contact__form {
