@@ -364,8 +364,9 @@
             var arr = ["#55BBCC", "#77EE99", "#ED77EE", "#FF7766"]; 
             console.log(arr[Math.floor(Math.random() * arr.length)]);
             var background_color = arr[Math.floor(Math.random() * arr.length)];
+            var logo = '/img/twofiveseven-web-'+background_color+'.gif';
              root.style.setProperty('--background-color', background_color);  
-            document.getElementById('logo').src='/img/twofiveseven-web-'+background_color+'.gif';
+            document.getElementById('logo').src=logo;
         </script>
     <!-- <script type="text/javascript" src="calc.js" id="convertcalculator-embedder-3s9JGG6kzNj78yt9u"
         class="convertcalculator-async-script-loader"></script> -->
