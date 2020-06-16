@@ -16,8 +16,8 @@
             <div class="header__inner">
 
                 <div class="header__logo">
-                    <a href="index.html">
-                        <img alt="logo" src="/img/twofiveseven-web-FF7766.gif" />
+                     <a href="index.html">
+                        <img id="logo" alt="logo" src="" />
                     </a>
                     <span class="workspace">workspace for a new world</span>
                 </div>
@@ -46,7 +46,18 @@
         </div>
     </div>
 
-
+<script type="text/javascript">
+            let root = document.documentElement;
+            var arr = ["55BBCC", "77EE99", "ED77EE", "FF7766"]; 
+            console.log(arr[Math.floor(Math.random() * arr.length)]);
+            var background_color = arr[Math.floor(Math.random() * arr.length)];
+             var img_root = '/img/twofiveseven-web-';
+             var extension = '.gif';
+             var logo = img_root.concat(background_color, extension );
+             console.log(logo);
+             root.style.setProperty('--background-color', "#" + background_color);  
+            document.getElementById('logo').src=logo;
+        </script>
 </body>
 
 </html>
