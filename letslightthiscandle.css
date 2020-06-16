@@ -160,7 +160,7 @@ h3 {
 }
 
 .header__nav-item {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   -webkit-transition: border 300ms;
   transition: border 300ms;
@@ -294,7 +294,7 @@ h3 {
 }
 
 .cc h2 {
-  color: var(--color-orange);
+  color: var(--color-black);
 }
 
 .cc h6 {
@@ -738,4 +738,9 @@ span.header-filler {
     width: auto;
     flex-grow: 1;
 }
+
+/*.calculator-home {
+  background: white;
+  padding-top: 3rem;
+}*/
 /*# sourceMappingURL=letslightthiscandle.css.map */
